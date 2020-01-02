@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合并单元格</title>
+</head>
+<body>
+    <h2 align="center">合并单元格</h2>
+    <table align="center" border="1" cellspacing="0" width="400" height="200">
+        <tr>
+            <td></td><td></td><td colspan="2"></td>
+            <!--跨列删除，将第一行的三四列合并，原第四列删除-->
+        </tr>
+        <tr>
+            <td rowspan="3"></td><td></td><td></td><td></td>
+            <!--跨行删除，将第一列的二三四行合并，将三四行的第一列删除-->
+        </tr>
+        <tr>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,52 @@
+为什么需要表单？
+    为了收集用户信息
+
+表单的构成
+    表单控件 、提示信息和表单域
+
+表单域
+    是一个包含表单元素的区域，实现用户信息的收集和传递。
+    <form action="url地址" metion="提交方式" name="表单域名称">
+        action  url地址 用于指定接收并处理表单数据的服务器程序的url地址
+        metion get/post 用于设置表单数据的提交方式，取值为get/post
+        name    名称    用于指定表单的名称，以区分同一个页面中的多个表单域
+
+表单控件
+    在表单域中可以定义各种表单元素，这些表单元素就是允许用户在表单中输入或者选择的内容控件。
+表单元素
+    <input>输入信息，单标签
+        <input type="属性值" />
+        type的属性值
+            button  定义可点击按钮（多数情况下，用于通过JavaScript启动脚本）
+            checkbox    定义复选框
+            file    定义输入字段和“浏览”按钮，供文件上传。
+            hidden  定义隐藏的输入字段
+            image   定义图像形式的提交按钮
+            password    定义密码字段
+            radio   定义单选按钮
+            reset   定义重置按钮
+            submit  定义提交按钮
+            text    心意单行的输入字段
+        其他属性
+        name    用户自定义  定义input元素的名称
+        value   用户自定义  规定input元素的值
+        checked checked     规定此input元素首次加载时应当被选中
+        maxlength   正整数  规定输入字段中的字符的最大长度
+
+label标签
+    <label>标签为input元素定义标注
+    <label>标签用于绑定一个表单元素，当点击<label>标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上，用来增加用户体验。
+    
+
+下拉表单元素
+在页面中，如果有多个选项让用户选择，并且想要节约页面空间，我们可以使用<select>标签控制下拉列表。
+<select>
+    <option>选项1</option>
+    <option>选项2</option>
+</select>
+select中至少包含一个option
+option中定义selected="selected"时，即为默认选项
+
+
+textarea文本域元素
+当用户输入内容较多的情况下，可以使用<testarea>标签控制下拉列表。

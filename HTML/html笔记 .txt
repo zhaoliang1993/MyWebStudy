@@ -1,0 +1,78 @@
+加粗：<strong>  <b>
+倾斜：<em>  <i>
+删除线：<del>  <s>
+下划线：<ins> <u>
+
+<div>和<span>  盒子 
+<div> 独占一行    大盒子
+<span>一行可放多个    小盒子
+
+图像标签
+<img src="图像URL">
+必须属性
+	src
+可选属性
+	alt   替换文本，图像打开失败显示文字
+	title  提示文本，鼠标放到图像上，显示的文字
+	width 图像的宽度
+	height 图像的高度
+	border 设置图片的变宽
+
+超链接：<a> 
+必须属性
+	href
+	href="#"空链接
+	herf="文件" 下载链接
+可选属性
+	target    其中_self当前网页打开(默认)，_blank为新窗口打开
+
+锚点链接
+	<a href="#id名">直接跳转到页面的特定位置
+
+注释标签
+	<!--注释内容-->
+	快捷键ctrl+/
+
+特殊字符
+	空格：	&nbsp
+	<:	&lt
+	>:	&gt
+	人民币：	&yen
+	&：	&amp
+
+
+表格标签
+表格的主要作用：用于显示、展示数据
+语法：
+	<table>
+		<tr>
+			<td>   </td>
+		</tr>
+	</table>
+<table>:表格
+<tr>：行
+<td>:单元格
+<th>:表头单元格
+
+属性：
+	align: left  center  right	规定表格相对周围元素的对齐方式
+	border:1(有边框) “(无边框，默认)
+	cellpadding:像素值		规定单元边与其内容之间的空白，默认为1
+	cellspacing:像素值		规定单元格之间的空白，默认2像素
+	width：像素值或百分比	规定单元格的宽度
+	weight:像素值或百分比	规定单元格的宽度
+例：
+ <h3>表格</h3>
+    <table>
+        <tr>
+            <td>姓名</td><td>年龄</td>
+        </tr>
+        <tr>
+            <td>李飞</td><td>24</td>
+        </tr>
+        <tr>
+            <td>小明</td><td>25</td>
+        </tr>
+
+    </table>
+
