@@ -1,0 +1,7 @@
+1.html的局限性
+    HTML只关注内容的语义
+
+2.css简介
+    css是层叠样式(Cascading Style Sheets)的简称，又称为css样式表。
+    主要作用：设置html页面中(字体，大小，对其方式)、
+    

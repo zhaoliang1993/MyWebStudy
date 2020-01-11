@@ -1,0 +1,38 @@
+背景属性可以设置背景颜色、背景图片、背景平铺、背景图片位置、背景图像固定等。
+
+背景颜色：  background-color:  ;
+背景图片：  background-image: url();
+
+背景平铺
+    如果需要在html页面中对背景图片进行平铺，可以使用background-repeat
+        属性：
+            repeat
+            no-repeat
+            repeat-x
+            repeat-y
+
+背景图片的位置
+    background-position改变背景图片在盒子中的位置。
+        background-position: x y;
+        x、y可以使用方位名词或精确单位
+           方位： top |center |bottom |left |center |right
+           精确单位：百分数 |由浮点数字和单位标识符组成的长度值
+        方位名词前后顺序没有关系，如果只指定一个方位名词，第二个默认居中对齐。
+        如果参数是精度单位，第一个是x坐标，第二个是y坐标。
+            eg: background-position: 20px 50px;  如果指定一个，另外一个y位置垂直居中。
+        混合单位：可以一个是方位名词，另一个是精确单位。
+
+背景图像固定（背景附着）
+    background-attachment属性设置图像是否固定或者随着页面的其余部分滚动。
+    background-attachment后期可以制作视差滚动效果。
+        参数：
+            scroll  背景图像随着对象内容滚动（默认）
+            fixed   背景图像固定
+
+背景复合写法
+    可以将背景属性合并简写在同一个属性background中，从而节约代码量。
+    当使用简写属性时，没有特定的书写顺序，一般习惯约定为：
+        background：背景颜色 背景图片地址 背景平铺 背景图像滚动 背景图片位置
+
+背景颜色半透明
+    background: rgba(0, 0, 0, 0.3)   0为全透明   1位不透明

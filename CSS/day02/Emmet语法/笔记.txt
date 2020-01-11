@@ -1,0 +1,50 @@
+1.快速生成标签  输入标签名+tab键
+
+2.生成多个标签  加上*标签个数就可以了  按回车键或tab键
+
+3.如果有父子级关系的标签    可以用>  
+    例如：
+    ul*2>lu*3生成
+    <ul>
+        <lu></lu>
+        <lu></lu>
+        <lu></lu>
+    </ul>
+    <ul>
+        <lu></lu>
+        <lu></lu>
+        <lu></lu>
+    </ul>
+
+4.兄弟级关系    使用+
+
+5.如果生成带有类名或标签名字的，直接写.demo 或者 #two 按回车键或tab键即可
+    例如
+        .var生成
+            <div class="var"></div>    （默认生成div）
+        p.var生成
+            <p class="var"></p>
+        .var$*5生成    $是自增符号
+            <div class="var1"></div>
+            <div class="var2"></div>
+            <div class="var3"></div>
+            <div class="var4"></div>
+            <div class="var5"></div>
+
+6.在生成的标签里默认生成几个字  使用{}
+    例如
+        p{你好}生成
+            <p>你好</p>
+
+7.快速生成CSS样式
+    w100    设置100px的宽
+    h200    设置200px的高
+    ti2em   设置2em缩进
+
+8.快速格式化代码
+    vscode右键     格式化文档
+    保存页面时，自动格式化代码
+    1）文件--->首选项--->设置
+    2）搜索setting.json下的【用户】中添加一下语句
+        "editor.formatOnType":true
+        "editor.formatOnSave":true

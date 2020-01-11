@@ -1,0 +1,31 @@
+body {
+    font: 16px/26px "Microsoft YaHwei"
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+p {
+    text-indent: 2em;
+}
+
+.img1 {
+    text-indent: 0em;
+    text-align: center;
+}
+
+.gray {
+    color: #888888;
+    font-size: 12px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.search {
+    color: #666666;
+    width: 150px;
+}

@@ -1,0 +1,27 @@
+color
+    定义文本颜色
+        十六进制     #ff0000
+        RGB代码      rgb(255,0,0)
+
+text-align
+    设置水平对齐方式
+    属性：
+        left    左对齐（默认）
+        right   右对齐
+        center  居中对齐
+
+text-decoration
+    装饰文本，添加下划线、删除线、上划线等
+    属性值：
+        none    默认，无装饰   可用于取消<a>标签中的默认下划线
+        underline   下划线
+        overline   上划线
+        line-through    删除线
+
+text-indent
+    设置首行缩进
+    格式：text-indent: 20px;   缩进多少像素
+          text-indent: 2em;   缩进当前元素两个大小的距离
+
+line-height
+    设置行间距
