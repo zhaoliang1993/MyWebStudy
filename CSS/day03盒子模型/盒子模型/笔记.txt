@@ -1,0 +1,71 @@
+看透网页布局的本质
+网页布局过程：
+    1.先准备好相关的网页元素，网页元素基本都是盒子Box
+    2.利用CSS设置好盒子样式，然后摆放到相应位置
+    3.往盒子里装内容
+
+盒子模型的组成
+    border  边框
+    content 内容
+    padding 内边距
+    margin  外边距
+
+边框 border
+    边框的粗细  border-width
+    边框的样式  border-style
+        solid   实线边框
+        dashed  虚线边框
+        dotted  点线边框
+    边框的颜色  border-color 
+    边框简写：border: 1px solid red; 没有顺序
+上边框：border-top
+下边框：border-bottom:
+左边框：border-left
+右边框：border-right
+
+表格的细线边框
+    border-collapse:collapse;   将相邻的边框合并到一起。
+
+内边距
+    padding-left    左内边距
+    padding-right   右内边距
+    padding-top     上内边距
+    padding-bottom  下内边距
+    简写：
+    padding：5px                    一个值代表上下左右都是5像素边内距
+    padding：5px 10px               2个值，上下为5像素，左右为10像素边内距
+    padding：5px 10px 20px          3个值，上5像素，左右10像素，下20像素内边距
+    padding: 5px 10px 20px 30px     4个值，上5像素，右是10像素，下20像素，左30像素内边距，顺时针
+
+外边距
+    margin-left         左外边距
+    margin-right        右外边距
+    margin-top          上外边距
+    margin-bottom       下外边距
+    简写：
+        简写方式和padding一致
+外边距的应用
+    1.可以让块级盒子水平居中，但必须满足两个条件
+        盒子必须指定了宽度（width）
+        盒子的左右外边距设置为auto
+    2.其他：行内元素居中,只需要给其父元素添加text-align: center
+
+外边距合并
+    使用margin定义块元素的垂直外边距时，可能会出现外边距的合并。
+    主要有两种情况：
+        相邻块元素垂直外边距合并
+        嵌套块元素垂直外边距的塌陷
+            对于两个嵌套关系的块元素，父元素上有外边距同时子元素上也有外边距，此时父元素会塌陷较大的外边距值。
+            解决办法：
+                可以为父元素定义上边框(可以是透明的)
+                可以为父元素定义上内边距
+                可以为父元素添加overflow:hidden
+
+清除内外边距
+    网页元素很多都带有默认的内外边距，而且不同浏览器默认的也不一致，因此我们在布局前，首先要清除下网页元素的内外边距。
+    * ｛
+        margin：0
+        padding：0；
+    ｝
+    这句也是我们css的第一行代码。
+    行内元素为了照顾兼容性，劲量只设置左右的内外边距，但是转换为块级和行内块元素就可以。

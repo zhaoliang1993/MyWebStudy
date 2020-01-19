@@ -1,0 +1,5 @@
+text-shadow
+    h-shadow    必须，垂直阴影位置
+    v-shadow    必需，水平阴影位置
+    bulr        可选，模糊的距离
+    color       可选，颜色

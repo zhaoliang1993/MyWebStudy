@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距</title>
+    <style>
+        .one {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(7, 232, 248);
+            margin-bottom: 50px;
+        }
+
+        .two {
+             width: 200px;
+            height: 200px;
+            background-color: rgb(7, 232, 248);
+            margin-top: 50px;
+        }
+
+        /* 设置盒子居中 */
+        .three {
+            width: 600px;
+            height: 500px;
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            /* 或者写成 */
+            margin: 0 auto;/* 只要左右居中即可 */
+            background-color: rgb(240, 13, 183);
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three"><span>行内元素居中</span><br /><span>只需要给其父元素添加text-align: center</span></div>
+</body>
+</html>

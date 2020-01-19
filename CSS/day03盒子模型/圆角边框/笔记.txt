@@ -1,0 +1,14 @@
+border-radius:length;设置圆角
+    length为圆角的半径
+    参数可以是数值或百分比的形式
+border-radius:10px 20px 30px 40px
+    4个参数，从左上角开始，顺时针
+border-radius:10px 20px
+    10px：左上角+右下角
+    20px：右上角+左下角
+
+分开写：
+    border-top-left-radius
+    border-top-right-radius
+    border-bottom-left-radius
+    border-bottom-right-radius

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒子阴影</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(218, 31, 71);
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 40px 40px 20px 5px rgba(0, 0, 0, .3);
+        }
+        /* 原先 盒子没有阴影，鼠标经过时就有阴影 */
+        h1 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(13, 201, 235);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1:hover {
+            box-shadow: 40px 40px 20px 5px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <h1></h1>
+</body>
+</html>
