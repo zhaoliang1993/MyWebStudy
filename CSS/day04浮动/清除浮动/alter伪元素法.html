@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>alter伪元素法</title>
+    <style>
+        .clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            /* IE6 7专有 */
+            *zoom: 1;
+        }
+
+
+        .box1 {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: rgb(100, 230, 235);
+            border: 1px solid rgb(0, 0, 0)
+
+        }
+
+        .damao {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(170, 219, 35);
+        }
+        .ermao {
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(13, 190, 93);
+        }
+
+        .box2 {
+            width: 350px;
+            height: 350px;
+            background-color: rgb(7, 48, 231);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>

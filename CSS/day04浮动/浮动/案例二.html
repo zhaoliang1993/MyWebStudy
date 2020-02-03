@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>案例二</title>
+    <style>
+        /* 清楚内外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 1226px;
+            height: 285px;
+            background-color: rgb(252, 160, 244);
+            margin: 0 auto;
+        }
+
+        .box li {
+            width: 296px;
+            height: 285px;
+            background-color: rgb(27, 238, 80);
+            float:left;
+            margin-right: 14px;
+        }
+
+        /* 要注意权重 */
+        .box .last {
+            margin-right: 0;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <ul class="box">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="last">4</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,33 @@
+为什么需要清除浮动？
+    由于父盒子在很多情况下，不方便给高度，但是子盒子浮动又不占有位置，最后父盒子高度为0时，就会影响下面的标准流盒子。
+
+清除浮动的本质
+    清除浮动的本质就是清除浮动元素造成的影响。
+
+语法：
+    选择器 ｛clear: 属性值｝
+    属性值：
+        left    不允许左侧有浮动元素（清除左侧浮动的影响）
+        right   不允许右侧有浮动元素（清除右侧浮动的影响）
+        both    同时清除左右两侧浮动的影响
+    在实际使用中，几乎只用both属性值
+    清除浮动的策略是：闭合浮动
+
+清除浮动的方法：
+    1. 额外标签法，也称为隔墙法，是W3C推荐的做法
+        会在浮动元素末尾添加一个空标签，例如<div style="clear: both"></div>，或者其他标签（如<br />等）。
+    2. 父级添加overflow属性
+        优点：代码简洁
+        缺点：无法显示溢出的部分YYYYYYYYYYYYYY GGGGGGGBVSSWDE3
+    3. 父级添加after伪元素
+        优点：没有增加标签
+        缺点：照顾低版本浏览器
+    4. 父级添加双伪元素
+
+CSS属性书写顺序（重点）
+    建议遵循以下顺序：
+        1. 布局定位属性：display / position / float / clear / visibility / overflow (建议display第一个写，毕竟关系到模式)
+        2. 自身属性：width / heigth / margin / padding / border / background
+        3. 文本属性：color / font / text-decoration / text-align / white-space / break-word
+        4. 其他属性：content / cursor / border-radius / box-shadow / text-shadow / backgronud:linear-gradient...
+    
