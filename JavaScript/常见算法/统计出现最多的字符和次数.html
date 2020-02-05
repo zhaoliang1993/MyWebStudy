@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>统计出现最多的字符和次数</title>
+    <script>
+        var str = 'adjkfhuidsgsadfdsbfhjsadjkdhfjdgggfdd';
+        var obj = {};
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);
+            if (obj[chars]) {
+                obj[chars] += 1;
+            }
+            else {
+                obj[chars] = 1;
+            }
+        }
+        console.log(obj);
+        var max = 0;
+        var ch = '';
+        for (var x in obj){
+            if (obj[x] > max){
+                max = obj[x];
+                ch = x;
+            }
+        }
+
+        console.log(ch + ': ' + max);
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
