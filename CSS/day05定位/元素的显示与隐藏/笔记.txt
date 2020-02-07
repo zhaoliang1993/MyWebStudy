@@ -1,0 +1,21 @@
+本质:让一个元素在页面中隐藏或者显示出来。
+
+display显示隐藏
+    display: none;  隐藏对象，不再占有原来位置
+    display: block; 除了转换为块级元素外，同时还有显示元素的意思。
+    应用及其广泛，搭配JS可以做很多的网页特效。
+
+visibility显示隐藏
+    参数：
+        inherit     继承上一个父对象的可见性
+        visible     对象可视
+        hidden      对象隐藏
+    visibility隐藏元素后，继续占有原来的位置。
+
+overflow溢出显示隐藏
+    参数：
+        visible     显示溢出的部分（默认）
+        hidden      隐藏溢出的部分
+        scroll      溢出的部分显示滚动条
+        auto        在需要的时候添加滚动条
+    如果有定位的盒子，请慎用overflow: hidden;因为会隐藏多余部分。

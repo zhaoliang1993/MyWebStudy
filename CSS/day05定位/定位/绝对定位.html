@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位</title>
+</head>
+<style>
+    /* 如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位 */
+    .son {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(238, 151, 20);
+    }
+
+    .father {
+        position: relative;
+        top: 500px;
+        left: 500px;
+        width: 500px;
+        height: 500px;
+        background-color: rgb(30, 226, 177);
+
+    }
+
+    .son1 {
+        position: absolute;
+        top: 250px;
+        left: 0px;
+        width: 30px;
+        height: 20px;
+        background-color: blue;
+    }
+
+    .son2 {
+        position: absolute;
+        top: 250px;
+        right: 0px;
+        width: 30px;
+        height: 20px;
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <div class="son">
+
+    </div>
+
+    <div class="father">
+        <div class="son1">
+
+        </div>
+        <div class="son2">
+
+        </div>
+    </div>
+</body>
+
+</html>
